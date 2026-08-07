@@ -1,11 +1,115 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPEDOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pequeña Empresa</title>
+    <title>Maqueta Web</title>
 </head>
 <body>
-    
+
+    <!-- 1. ENCABEZADO Y NAVEGACIÓN -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo Empresa">
+            <h1>LOGO EMPRESA</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#quienes-somos">Quiénes Somos</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 2. CONTENIDO PRINCIPAL -->
+    <main>
+        
+        <!-- Sección de Quiénes Somos y Productos (bloque superior de dos columnas) -->
+        <section class="contenido-superior">
+            
+            <!-- Columna Izquierda: Quiénes Somos -->
+            <article id="quienes-somos">
+                <h2>Quiénes Somos</h2>
+                <p><strong>Información breve sobre la empresa</strong>, su misión y visión, y los servicios que ofrece.</p>
+                <p>
+                    Una pequeña empresa desea contar con un sitio web informativo 
+                    <strong>donde pueda difundir noticias</strong>, publicar información 
+                    institucional y ofrecer un contenido de contacto para que las personas la visiten.
+                </p>
+                <a href="#mas-info" class="btn">Leer más</a>
+            </article>
+
+            <!-- Columna Derecha: Productos Destacados -->
+            <section id="productos">
+                <h2>Nuestros Productos Destacados</h2>
+
+                <!-- Tarjeta Producto 1 -->
+                <article class="producto-card">
+                    <img src="producto1.jpg" alt="Producto 1">
+                    <div>
+                        <h3>Producto 1</h3>
+                        <p>Descripción breve del producto.</p>
+                        <a href="#" class="btn">Ver más</a>
+                    </div>
+                </article>
+
+                <!-- Tarjeta Producto 2 -->
+                <article class="producto-card">
+                    <img src="producto2.jpg" alt="Producto 2">
+                    <div>
+                        <h3>Producto 2</h3>
+                        <p>Descripción breve del producto.</p>
+                        <a href="#" class="btn">Ver más</a>
+                    </div>
+                </article>
+
+                <!-- Tarjeta Producto 3 -->
+                <article class="producto-card">
+                    <img src="producto3.jpg" alt="Producto 3">
+                    <div>
+                        <h3>Producto 3</h3>
+                        <p>Descripción breve del producto.</p>
+                        <a href="#" class="btn">Ver más</a>
+                    </div>
+                </article>
+            </section>
+
+        </section>
+
+        <!-- Sección de Formulario de Contacto (bloque inferior) -->
+        <section id="contacto">
+            <h2>Contáctanos</h2>
+            <p>
+                Información breve sobre la <strong>empresa, su misión y visión</strong>, los servicios que ofrece. 
+                Con base en lo anterior, responde las siguientes preguntas.
+            </p>
+
+            <form action="#" method="POST">
+                <div class="input-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre completo">
+
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="Correo electrónico">
+                </div>
+
+                <div class="input-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje..."></textarea>
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- 3. PIE DE PÁGINA -->
+    <footer>
+        <p>&copy; 2024 Nombre de la Empresa. Todos los derechos reservados.</p>
+    </footer>
+
 </body>
 </html>
